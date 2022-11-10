@@ -11,9 +11,32 @@
 
 I made a web application with react js that simulates a section of a page, it would be a section of frequently asked questions where they would touch a button to get more information about the question they want to see.
 
-## Feel free to edit my code
+## Technologies used
 
-In helpers/data.js you can add new questions with the same keys of the others but you can add more attributes.
+1. React JS
+2. CSS3
+
+## Galery
+
+![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-0.jpg)
+
+![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-1.jpg)
+
+![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-2.jpg)
+
+![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-3.jpg)
+
+## Portfolio Link
+
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Accordion%20app%20page`
+
+## Video
+
+https://user-images.githubusercontent.com/99032604/199128577-5fe79c8e-4a92-4a92-96ac-1dab86ecb52b.mp4
+
+## Documentation
+
+In the `helpers/data.js` file we get all the questions, it is also possible to add more respecting the format:
 
 ```
 const questions = [
@@ -43,29 +66,28 @@ const questions = [
     info: "Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ",
   },
 ];
+export default questions;
 ```
 
-## Technologies used
+In the `Main.jsx` component we will find the `questions` state that by default will have loaded all the information from `helpers/data.js`:
 
-1. React JS
-2. CSS3
+```
+const [question] = useState(questions);
+```
 
-## Galery
+In the `Question.jsx` component we will find the following logic. We will have a state called `information` depending if it is true or false it will show information or different components and then you have `isActive` that serves to know if to add classes or not:
 
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-0.jpg)
+```
+const [information, setInformation] = useState(false);
+const [isActive, setIsActive] = useState(false);
 
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-1.jpg)
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-2.jpg)
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-3.jpg)
-
-## Portfolio Link
-
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Accordion%20app%20page`
-
-## Video
-
-
-https://user-images.githubusercontent.com/99032604/199128577-5fe79c8e-4a92-4a92-96ac-1dab86ecb52b.mp4
-
+const handleShowInformation = (e) => {
+  if (!information) {
+    setInformation(true);
+    setIsActive(true);
+  } else {
+    setInformation(false);
+    setIsActive(false);
+  }
+};
+```

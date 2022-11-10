@@ -3,7 +3,7 @@ import questions from "../helpers/data";
 import { Question } from "./Question";
 
 export const Main = () => {
-  const [question, setQuestion] = useState(questions);
+  const [question] = useState(questions);
 
   return (
     <>
