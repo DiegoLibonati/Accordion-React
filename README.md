@@ -28,7 +28,7 @@ I made a web application with react js that simulates a section of a page, it wo
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Accordion%20app%20page`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Accordion%20App%20Page`
 
 ## Video
 
