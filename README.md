@@ -16,20 +16,6 @@ I made a web application with react js that simulates a section of a page, it wo
 1. React JS
 2. CSS3
 
-## Galery
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-0.jpg)
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-1.jpg)
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-2.jpg)
-
-![Accordion-App-Page](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/React/Imagenes/accordion-3.jpg)
-
-## Portfolio Link
-
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Accordion%20App%20Page`
-
 ## Video
 
 https://user-images.githubusercontent.com/99032604/199128577-5fe79c8e-4a92-4a92-96ac-1dab86ecb52b.mp4
