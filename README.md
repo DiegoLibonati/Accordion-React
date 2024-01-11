@@ -19,7 +19,7 @@ I made a web application with react js that simulates a section of a page, it wo
 
 ## Video
 
-https://user-images.githubusercontent.com/99032604/199128577-5fe79c8e-4a92-4a92-96ac-1dab86ecb52b.mp4
+https://github.com/DiegoLibonati/Accordion-App-Page/assets/99032604/d09a3459-fa73-4f79-bea9-ef6ea4f6dcf2
 
 ## Documentation
 
