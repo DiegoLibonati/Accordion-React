@@ -15,7 +15,7 @@ I made a web application with react js that simulates a section of a page, it wo
 
 1. React JS
 2. Typescript
-3. CSS3
+3. Tailwind CSS
 
 ## Video
 
@@ -69,15 +69,8 @@ In the `Question.tsx` component we will find the following logic. We will have a
 
 ```
 const [information, setInformation] = useState<boolean>(false);
-const [isActive, setIsActive] = useState<boolean>(false);
 
 const handleShowInformation: React.MouseEventHandler<SVGElement> = () => {
-  if (!information) {
-    setInformation(true);
-    setIsActive(true);
-  } else {
-    setInformation(false);
-    setIsActive(false);
-  }
-};
+  setInformation(prev => !prev);
+}
 ```

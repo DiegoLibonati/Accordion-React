@@ -7,13 +7,9 @@ export const Main = (): JSX.Element => {
   const [question] = useState<QuestionT[]>(questions);
 
   return (
-    <main className="main_container">
-      <section className="faqs_container">
-        <article className="faqs_container_title">
-          <h1>Questions And Answers About Login</h1>
-        </article>
-
-        <article className="faqs_container_questions">
+    <main className="w-screen h-screen bg-[#fafafa]">
+      <section className="w-full h-full">
+        <article className="flex items-center justify-center flex-col w-full h-full">
           {question.map((question) => {
             return <Question key={question.id} {...question}></Question>;
           })}
