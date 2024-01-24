@@ -17,6 +17,10 @@ I made a web application with react js that simulates a section of a page, it wo
 2. Typescript
 3. Tailwind CSS
 
+## Portfolio Link
+
+[`https://www.diegolibonati.com.ar/#/project/50`](https://www.diegolibonati.com.ar/#/project/50)
+
 ## Video
 
 https://github.com/DiegoLibonati/Accordion-App-Page/assets/99032604/d09a3459-fa73-4f79-bea9-ef6ea4f6dcf2
