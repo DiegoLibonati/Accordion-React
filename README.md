@@ -1,4 +1,4 @@
-# Accordion-App-Page
+# Accordion React
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ I made a web application with react js that simulates a section of a page, it wo
 
 ## Portfolio Link
 
-[`https://www.diegolibonati.com.ar/#/project/50`](https://www.diegolibonati.com.ar/#/project/50)
+[`https://www.diegolibonati.com.ar/#/project/Accordion-React`](https://www.diegolibonati.com.ar/#/project/Accordion-React)
 
 ## Video
 
