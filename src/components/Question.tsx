@@ -12,7 +12,7 @@ export const Question = ({ title, info }: QuestionProps): JSX.Element => {
   };
 
   return (
-    <div className="flex items-center justify-center w-[85%] flex-col rounded-lg border-2 border-[#F7F7F7] mb-2 md:w-[50%]">
+    <div className="flex items-center justify-center w-[85%] flex-col rounded-lg border-2 border-[#F7F7F7] mb-2 md:w-[50%]" data-testid="question">
       <div
         className={`flex flex-row items-center justify-between w-full p-2 ${
           information ? "bg-[#F2F2F2]" : "bg-white"
