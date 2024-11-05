@@ -7,7 +7,3 @@ export type Question = {
 };
 
 // ##### INTERFACES #####
-export interface QuestionProps {
-  title: string;
-  info: string;
-}

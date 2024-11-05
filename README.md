@@ -72,9 +72,9 @@ const [question] = useState<QuestionT[]>(questions);
 In the `Question.tsx` component we will find the following logic. We will have a state called `information` depending if it is true or false it will show information or different components and then you have `isActive` that serves to know if to add classes or not:
 
 ```
-const [information, setInformation] = useState<boolean>(false);
+const [showDescription, setShowDescription] = useState<boolean>(false);
 
 const handleShowInformation: React.MouseEventHandler<SVGElement> = () => {
-  setInformation(prev => !prev);
+  setShowDescription(prev => !prev);
 }
 ```

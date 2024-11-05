@@ -1,25 +1,33 @@
 import { useState } from "react";
+
 import { BsPlusCircle, BsPatchMinus } from "react-icons/bs";
-import { QuestionProps } from "../entities/entities";
+
+interface QuestionProps {
+  title: string;
+  info: string;
+}
 
 export const Question = ({ title, info }: QuestionProps): JSX.Element => {
-  const [information, setInformation] = useState<boolean>(false);
+  const [showDescription, setShowDescription] = useState<boolean>(false);
 
   const handleShowInformation: React.MouseEventHandler<
     HTMLButtonElement
   > = () => {
-    setInformation((prev) => !prev);
+    setShowDescription((prev) => !prev);
   };
 
   return (
-    <div className="flex items-center justify-center w-[85%] flex-col rounded-lg border-2 border-[#F7F7F7] mb-2 md:w-[50%]" data-testid="question">
+    <div
+      className="flex items-center justify-center w-[85%] flex-col rounded-lg border-2 border-[#F7F7F7] mb-2 md:w-[50%]"
+      data-testid="question"
+    >
       <div
         className={`flex flex-row items-center justify-between w-full p-2 ${
-          information ? "bg-[#F2F2F2]" : "bg-white"
+          showDescription ? "bg-[#F2F2F2]" : "bg-white"
         }`}
       >
         <h2 className="text-sm font-semibold">{title}</h2>
-        {!information ? (
+        {!showDescription ? (
           <button
             type="button"
             aria-label="open question"
@@ -37,7 +45,7 @@ export const Question = ({ title, info }: QuestionProps): JSX.Element => {
           </button>
         )}
       </div>
-      {information ? (
+      {showDescription ? (
         <p className={"text-xs p-2 text-center bg-[#FBFBFB] text-[#BBBBBB]"}>
           {info}
         </p>
