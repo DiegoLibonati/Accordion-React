@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Question as QuestionT } from "./entities/entities";
 
-import { Question } from "./components/Question";
+import { Question } from "./components/Question/Question";
 
 import questions from "./helpers/data";
 
