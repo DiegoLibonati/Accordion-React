@@ -17,6 +17,15 @@ I made a web application with react js that simulates a section of a page, it wo
 2. Typescript
 3. Tailwind CSS
 
+## Libraries used
+
+1. @testing-library/jest-dom
+2. @testing-library/react
+3. @testing-library/user-event
+4. react-icons
+5. @testing-library/dom
+6. @types/jest
+
 ## Portfolio Link
 
 [`https://www.diegolibonati.com.ar/#/project/Accordion-React`](https://www.diegolibonati.com.ar/#/project/Accordion-React)
@@ -24,6 +33,12 @@ I made a web application with react js that simulates a section of a page, it wo
 ## Video
 
 https://github.com/DiegoLibonati/Accordion-App-Page/assets/99032604/d09a3459-fa73-4f79-bea9-ef6ea4f6dcf2
+
+## Testing
+
+1. Join to the correct path of the clone and join to: `bookstore-app`
+2. Execute: `yarn install`
+3. Execute: `yarn test`
 
 ## Documentation
 
