@@ -54,7 +54,7 @@ https://github.com/DiegoLibonati/Accordion-App-Page/assets/99032604/d09a3459-fa7
 
 ## Testing
 
-1. Join to the correct path of the clone and join to: `bookstore-app`
+1. Join to the correct path of the clone
 2. Execute: `yarn install`
 3. Execute: `yarn test`
 
