@@ -19,12 +19,24 @@ I made a web application with react js that simulates a section of a page, it wo
 
 ## Libraries used
 
-1. @testing-library/jest-dom
-2. @testing-library/react
-3. @testing-library/user-event
-4. react-icons
-5. @testing-library/dom
-6. @types/jest
+```
+  "@testing-library/jest-dom": "^6.6.2",
+  "@testing-library/react": "^16.0.1",
+  "@testing-library/user-event": "^14.5.2",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-icons": "^4.4.0",
+  "react-scripts": "5.0.1",
+  "typescript": "^5.3.3",
+  "web-vitals": "^2.1.4"
+
+  "@testing-library/dom": "^10.4.0",
+  "@types/jest": "^29.5.13",
+  "@types/react": "^18.3.11",
+  "@types/react-dom": "^18.3.1",
+  "@types/node": "^20.10.6",
+  "tailwindcss": "^3.4.1"
+```
 
 ## Portfolio Link
 
