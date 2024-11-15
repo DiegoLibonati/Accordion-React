@@ -3,8 +3,6 @@ import user from "@testing-library/user-event";
 
 import { Question } from "./Question";
 
-import "@testing-library/jest-dom";
-
 const renderComponent = (): {
   question: { title: string; info: string };
   container: HTMLElement;
@@ -73,6 +71,7 @@ describe("When the question is closed", () => {
   test("The title container must have bg-white className", () => {
     const { container } = renderComponent();
 
+    // eslint-disable-next-line
     const headQuestion = container.querySelector("div > div > div");
 
     expect(headQuestion).toHaveClass("bg-white");
@@ -113,6 +112,7 @@ describe("When the question is open", () => {
   test("The title container should be painted with  bg-[#F2F2F2]", async () => {
     const { container } = await renderComponentWithQuestionOpen();
 
+    // eslint-disable-next-line
     const headQuestion = container.querySelector("div > div > div");
 
     expect(headQuestion).toHaveClass("bg-[#F2F2F2]");

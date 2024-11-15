@@ -4,8 +4,6 @@ import App from "./App";
 
 import questions from "./helpers/data";
 
-import "@testing-library/jest-dom";
-
 const renderComponent = (): { container: HTMLElement } => {
   const { container } = render(<App />);
 
