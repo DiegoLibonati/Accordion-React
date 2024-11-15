@@ -4,8 +4,8 @@
 
 1. Clone the repository
 2. Join to the correct path of the clone
-3. Install node_modules with npm install
-4. Use npm start to run the app page
+3. Install node_modules with `npm install` or `yarn install`
+4. Use `npm start` or `yarn start` to run the app page
 
 ## Description
 
