@@ -4,7 +4,7 @@ import { Question as QuestionT } from "./entities/entities";
 
 import { Question } from "./components/Question/Question";
 
-import questions from "./helpers/data";
+import questions from "./constants/data";
 
 import "./App.css";
 

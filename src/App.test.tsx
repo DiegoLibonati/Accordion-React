@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react";
 
 import App from "./App";
 
-import questions from "./helpers/data";
+import questions from "./constants/data";
 
 const renderComponent = (): { container: HTMLElement } => {
   const { container } = render(<App />);
