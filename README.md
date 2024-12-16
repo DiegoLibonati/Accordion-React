@@ -44,7 +44,6 @@ I made a web application with react js that simulates a section of a page, it wo
 "tailwindcss": "^3.4.1"
 "jest": "^29.7.0"
 "jest-environment-jsdom": "^29.7.0"
-"jest-fixed-jsdom": "^0.0.9"
 "ts-jest": "^29.2.5"
 ```
 
