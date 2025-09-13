@@ -1,5 +1,11 @@
 # Accordion React
 
+## Educational Purpose
+
+This project was created primarily for **educational and learning purposes**.  
+While it is well-structured and could technically be used in production, it is **not intended for commercialization**.  
+The main goal is to explore and demonstrate best practices, patterns, and technologies in software development.
+
 ## Getting Started
 
 1. Clone the repository
@@ -39,12 +45,16 @@ I made a web application with react js that simulates a section of a page, it wo
 "@types/node": "^20.10.6"
 "@types/react": "^18.3.11"
 "@types/react-dom": "^18.3.1"
+"@vitejs/plugin-react": "^5.0.2"
+"autoprefixer": "^10.4.21"
 "jest": "^29.7.0"
 "jest-environment-jsdom": "^29.7.0"
-"react-scripts": "5.0.1"
-"tailwindcss": "^3.4.1"
+"postcss": "^8.5.6"
+"tailwindcss": "^3.4.17"
 "ts-jest": "^29.2.5"
+"ts-node": "^10.9.2"
 "typescript": "^4.9.5"
+"vite": "^7.1.5"
 ```
 
 ## Portfolio Link
@@ -59,3 +69,5 @@ https://github.com/DiegoLibonati/Accordion-App-Page/assets/99032604/d09a3459-fa7
 
 1. Join to the correct path of the clone
 2. Execute: `yarn test` or `npm test`
+
+## Known Issues

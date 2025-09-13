@@ -1,7 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import user from "@testing-library/user-event";
 
-import { Question } from "./Question";
+import { Question } from "@src/components/Question/Question";
 
 const renderComponent = (): {
   question: { title: string; info: string };
