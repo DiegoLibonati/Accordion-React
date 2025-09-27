@@ -22,6 +22,7 @@ I made a web application with react js that simulates a section of a page, it wo
 1. React JS
 2. Typescript
 3. Tailwind CSS
+4. Vite
 
 ## Libraries used
 
