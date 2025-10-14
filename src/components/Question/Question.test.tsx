@@ -1,23 +1,27 @@
 import { screen, render } from "@testing-library/react";
 import user from "@testing-library/user-event";
 
+import { QuestionProps } from "@src/entities/props";
+
 import { Question } from "@src/components/Question/Question";
 
-const renderComponent = (): {
-  question: { title: string; info: string };
+type RenderComponent = {
+  props: QuestionProps
   container: HTMLElement;
-} => {
-  const question = {
+}
+
+const renderComponent = (): RenderComponent => {
+  const props = {
     title: "¿Esta es una pregunta?",
     info: "Informacion de la pregunta",
   };
 
   const { container } = render(
-    <Question title={question.title} info={question.info} />
+    <Question title={props.title} info={props.info} />
   );
 
   return {
-    question: question,
+    props: props,
     container: container,
   };
 };
@@ -50,10 +54,10 @@ const renderComponentWithQuestionOpen = async (): Promise<{
 describe("Question.tsx", () => {
   describe("When the question is closed", () => {
     test("The title must be rendered", () => {
-      const { question } = renderComponent();
+      const { props } = renderComponent();
 
       const heading = screen.getByRole("heading", {
-        name: question.title,
+        name: props.title,
       });
 
       expect(heading).toBeInTheDocument();
@@ -79,9 +83,9 @@ describe("Question.tsx", () => {
     });
 
     test("The close button and the question description do not have to be rendered.", () => {
-      const { question } = renderComponent();
+      const { props } = renderComponent();
 
-      const information = screen.queryByText(question.info);
+      const information = screen.queryByText(props.info);
       const closeButton = screen.queryByRole("button", {
         name: /close question/i,
       });

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Question as QuestionT } from "@src/entities/entities";
+import { Question as QuestionT } from "@src/entities/app";
 
 import { Question } from "@src/components/Question/Question";
 

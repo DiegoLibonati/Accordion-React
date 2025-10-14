@@ -1,4 +1,4 @@
-import { Question } from "@src/entities/entities";
+import { Question } from "@src/entities/app";
 
 const questions: Question[] = [
   {

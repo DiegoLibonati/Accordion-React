@@ -1,11 +1,7 @@
 import { useState } from "react";
-
 import { BsPlusCircle, BsPatchMinus } from "react-icons/bs";
 
-interface QuestionProps {
-  title: string;
-  info: string;
-}
+import { QuestionProps } from "@src/entities/props";
 
 export const Question = ({ title, info }: QuestionProps): JSX.Element => {
   const [showDescription, setShowDescription] = useState<boolean>(false);

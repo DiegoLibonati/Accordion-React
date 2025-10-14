@@ -4,7 +4,9 @@ import App from "@src/App";
 
 import questions from "@src/constants/data";
 
-const renderComponent = (): { container: HTMLElement } => {
+type RenderComponent = { container: HTMLElement };
+
+const renderComponent = (): RenderComponent => {
   const { container } = render(<App />);
 
   return {
