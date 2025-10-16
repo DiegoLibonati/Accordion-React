@@ -4,7 +4,7 @@ import { Question as QuestionT } from "@src/entities/app";
 
 import { Question } from "@src/components/Question/Question";
 
-import questions from "@src/constants/data";
+import questions from "@src/constants/questions";
 
 function App(): JSX.Element {
   const [question] = useState<QuestionT[]>(questions);

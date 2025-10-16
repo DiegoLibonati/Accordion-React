@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react";
 
 import App from "@src/App";
 
-import questions from "@src/constants/data";
+import questions from "@src/constants/questions";
 
 type RenderComponent = { container: HTMLElement };
 
