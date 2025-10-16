@@ -1,20 +1,20 @@
 import { screen, render } from "@testing-library/react";
 
-import App from "@src/App";
+import { QuestionsPage } from "@src/pages/QuestionsPage/QuestionsPage";
 
 import questions from "@src/constants/questions";
 
 type RenderComponent = { container: HTMLElement };
 
 const renderComponent = (): RenderComponent => {
-  const { container } = render(<App />);
+  const { container } = render(<QuestionsPage />);
 
   return {
     container: container,
   };
 };
 
-describe("App.tsx", () => {
+describe("QuestionsPage.tsx", () => {
   describe("General Tests.", () => {
     test("All questions must be rendered.", () => {
       renderComponent();
