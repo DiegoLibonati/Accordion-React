@@ -6,9 +6,9 @@ import { QuestionProps } from "@src/entities/props";
 import { Question } from "@src/components/Question/Question";
 
 type RenderComponent = {
-  props: QuestionProps
+  props: QuestionProps;
   container: HTMLElement;
-}
+};
 
 const renderComponent = (): RenderComponent => {
   const props = {
@@ -77,7 +77,8 @@ describe("Question.tsx", () => {
       const { container } = renderComponent();
 
       // eslint-disable-next-line
-      const headQuestion = container.querySelector("div > div > div");
+      const headQuestion =
+        container.querySelector<HTMLDivElement>("div > div > div");
 
       expect(headQuestion).toHaveClass("bg-primary");
     });
@@ -118,7 +119,8 @@ describe("Question.tsx", () => {
       const { container } = await renderComponentWithQuestionOpen();
 
       // eslint-disable-next-line
-      const headQuestion = container.querySelector("div > div > div");
+      const headQuestion =
+        container.querySelector<HTMLDivElement>("div > div > div");
 
       expect(headQuestion).toHaveClass("bg-primary");
     });
