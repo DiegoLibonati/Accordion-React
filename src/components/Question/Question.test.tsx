@@ -76,7 +76,6 @@ describe("Question.tsx", () => {
     test("The title container must have bg-primary className", () => {
       const { container } = renderComponent();
 
-      // eslint-disable-next-line
       const headQuestion =
         container.querySelector<HTMLDivElement>("div > div > div");
 
@@ -118,7 +117,6 @@ describe("Question.tsx", () => {
     test("The title container should be painted with bg-primary", async () => {
       const { container } = await renderComponentWithQuestionOpen();
 
-      // eslint-disable-next-line
       const headQuestion =
         container.querySelector<HTMLDivElement>("div > div > div");
 
