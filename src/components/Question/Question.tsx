@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { BsPlusCircle, BsPatchMinus } from "react-icons/bs";
 
 import { QuestionProps } from "@/types/props";
 
 const Question = ({ title, info }: QuestionProps) => {
   const [showDescription, setShowDescription] = useState<boolean>(false);
+  const descriptionId = useId();
 
   const handleShowInformation: React.MouseEventHandler<HTMLButtonElement> = () => {
     setShowDescription((prev) => !prev);
@@ -20,19 +21,28 @@ const Question = ({ title, info }: QuestionProps) => {
           showDescription ? "rounded-tr-lg rounded-tl-lg" : "rounded-lg"
         }`}
       >
-        <h2 className="text-sm font-medium text-white">{title}</h2>
-        {!showDescription ? (
-          <button type="button" aria-label="open question" onClick={handleShowInformation}>
-            <BsPlusCircle fontWeight={600} fill="#ffffff"></BsPlusCircle>
-          </button>
-        ) : (
-          <button type="button" aria-label="close question" onClick={handleShowInformation}>
-            <BsPatchMinus fontWeight={600} fill="#ffffff"></BsPatchMinus>
-          </button>
-        )}
+        <h2 className="text-sm font-medium text-white" id={`${descriptionId}-title`}>
+          {title}
+        </h2>
+        <button
+          type="button"
+          aria-expanded={showDescription}
+          aria-controls={descriptionId}
+          aria-label={`${showDescription ? "Cerrar" : "Abrir"} respuesta: ${title}`}
+          onClick={handleShowInformation}
+        >
+          {showDescription ? (
+            <BsPatchMinus fontWeight={600} fill="#ffffff" aria-hidden="true" />
+          ) : (
+            <BsPlusCircle fontWeight={600} fill="#ffffff" aria-hidden="true" />
+          )}
+        </button>
       </div>
       {showDescription ? (
         <p
+          id={descriptionId}
+          role="region"
+          aria-labelledby={`${descriptionId}-title`}
           className={"text-xs p-2 text-justify bg-secondary text-white rounded-br-lg rounded-bl-lg"}
         >
           {info}
