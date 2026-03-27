@@ -1,14 +1,12 @@
 import { useState } from "react";
 
-import { Question as QuestionT } from "@src/entities/app";
+import { Question as QuestionT } from "@/types/app";
 
-import { Question } from "@src/components/Question/Question";
+import Question from "@/components/Question/Question";
 
-import questionsData from "@src/constants/questions";
+import questionsData from "@/constants/questions";
 
-import "@src/pages/QuestionsPage/QuestionsPage.css";
-
-export const QuestionsPage = () => {
+const QuestionsPage = () => {
   const [questions] = useState<QuestionT[]>(questionsData);
 
   return (
@@ -23,3 +21,5 @@ export const QuestionsPage = () => {
     </main>
   );
 };
+
+export default QuestionsPage;

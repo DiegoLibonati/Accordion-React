@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { BsPlusCircle, BsPatchMinus } from "react-icons/bs";
 
-import { QuestionProps } from "@src/entities/props";
+import { QuestionProps } from "@/types/props";
 
-export const Question = ({ title, info }: QuestionProps): JSX.Element => {
+const Question = ({ title, info }: QuestionProps) => {
   const [showDescription, setShowDescription] = useState<boolean>(false);
 
-  const handleShowInformation: React.MouseEventHandler<
-    HTMLButtonElement
-  > = () => {
+  const handleShowInformation: React.MouseEventHandler<HTMLButtonElement> = () => {
     setShowDescription((prev) => !prev);
   };
 
@@ -24,28 +22,18 @@ export const Question = ({ title, info }: QuestionProps): JSX.Element => {
       >
         <h2 className="text-sm font-medium text-white">{title}</h2>
         {!showDescription ? (
-          <button
-            type="button"
-            aria-label="open question"
-            onClick={handleShowInformation}
-          >
+          <button type="button" aria-label="open question" onClick={handleShowInformation}>
             <BsPlusCircle fontWeight={600} fill="#ffffff"></BsPlusCircle>
           </button>
         ) : (
-          <button
-            type="button"
-            aria-label="close question"
-            onClick={handleShowInformation}
-          >
+          <button type="button" aria-label="close question" onClick={handleShowInformation}>
             <BsPatchMinus fontWeight={600} fill="#ffffff"></BsPatchMinus>
           </button>
         )}
       </div>
       {showDescription ? (
         <p
-          className={
-            "text-xs p-2 text-justify bg-secondary text-white rounded-br-lg rounded-bl-lg"
-          }
+          className={"text-xs p-2 text-justify bg-secondary text-white rounded-br-lg rounded-bl-lg"}
         >
           {info}
         </p>
@@ -53,3 +41,5 @@ export const Question = ({ title, info }: QuestionProps): JSX.Element => {
     </div>
   );
 };
+
+export default Question;
